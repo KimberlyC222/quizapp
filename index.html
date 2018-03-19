@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stanley Kubrick Quiz App</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <main class="all-content" >
+      <h1>Stanley Kubrick Quiz</h1>
+      <div role="region">
+        <img src="http://www.indiewire.com/wp-content/uploads/2017/06/screen-shot-2017-06-30-at-2-31-27-pm.png?w=780" alt="Photo of Stanley Kubrick Holding a Camera">
+        </div>
+      <br/>
+      <button id="start" class="btn">Begin</button>
+      <section class="qAndAForm" >
+        <form id="form" role="form">
+          <fieldset id="question" name="question"></fieldset>
+          <fieldset id="answers" name="answers"></fieldset>
+          <section class="feedback-section" >
+              <div role="region" class="feedback">
+              <span id="feedback-content"></span>
+              </div>
+          </section>
+          <button type="submit" id="checkAnswer" class="button">
+            Submit Answer
+          </button>
+          <br/>
+          <button type="submit" id="next" class="button">
+            Next
+          </button>
+        </form>
+        <div class="progress" role="region"></div>
+      </section>
+      <div id="result" role="region"></div>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
